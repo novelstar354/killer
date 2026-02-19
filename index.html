@@ -12,20 +12,21 @@ body{
   color:#eee;
   font-family:"Times New Roman", serif;
   overflow:hidden;
-  display:flex;
+  /*display:flex;*/
   justify-content:center;
   align-items:center;
   height:100vh;
   background-image: url(https://rehive.net/recontext/kira/wp-content/uploads/2023/12/ogp.jpg);
-  background-blend-mode: lighten;
-     background-repeat: no-repeat;
     background-size:cover;
-    background-color:rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-color: rgba(0,0,0,0.7);
+
 }
 
 #container{
   text-align:center;
-  animation: fadeIn 3s ease forwards;
+  /*animation: fadeIn 3s ease forwards;*/
 }
 
 h1{
@@ -33,11 +34,12 @@ h1{
   letter-spacing:8px;
   color:#c00;
   text-shadow:0 0 20px red;
+  padding:20px;
 }
 
 p{
-  margin-top:30px;
-  font-size:18px;
+  margin-top:10px;
+  font-size:25px;
   line-height:1.8;
   opacity:0.85;
 }
@@ -55,7 +57,7 @@ p{
 */
 #enterBtn{
   margin-top:40px;
-  padding:2px 30px;
+  padding:2px 40px;
   font-size:20px;
   background:white;
   color:red;
@@ -67,7 +69,7 @@ p{
 #enterBtn:hover{
   background:white;
   color:black;
-  box-shadow:0 0 20px red;
+  box-shadow:0 0 20px gold;
 }
 
 #inner{
@@ -92,10 +94,19 @@ p{
 </head>
 
 <body>
-
+<div style="font:bold;">
 <div id="container">
-  <h1 class="glow">救世主キラ伝説</h1>
-  <p>
+  <h1 class="glow" style="padding:0px 0;
+  -webkit-text-stroke: 10px black;
+  text-stroke: 2px black;
+  paint-order: stroke;"><br><br>救世主キラ伝説</h1>
+   <div style="padding:0px 0;"> 
+  <div style="
+  -webkit-text-stroke: 10px black;
+  text-stroke: 2px black;
+  paint-order: stroke;
+">
+    <p>
     今　世界の犯罪者が次々と<br>
     消えているのは<br>
     キラ様が復活なされたからです。<br>
@@ -103,10 +114,26 @@ p{
     キラ様とは世の中の悪を絶対に許さない<br>
     地獄よりの死者です。<br>
   </p>
-<p style="font-size:30px;">キラ様の復活を信じる者のみ<br>この入口からお入りください<br><br></p>
-  <button id="enterBtn" style="color:black">ENTER</button>
+      </div>
+    </div>
+<div style="
+  -webkit-text-stroke: 10px black;
+  text-stroke: 2px black;
+  paint-order: stroke;
+">
+    <p style="font-size:30px;">キラ様の復活を信じる者のみ<br>この入口からお入りください<br></p>
+<!--  <button id="enterBtn" style="color:black">ENTER</button>--></div>
+<button id="enterBtn" style="color:black; background:white;margin:5px 15px;cursor:pointer;" onclick="loction.href='https://novelstar354.github.io/starcorperation'">ENTER</button>
+<!--margin-top:40px;
+  padding:2px 30px;
+  font-size:20px;
+  background:white;
+  color:red;
+  border:2px solid white;
+  cursor:pointer;
+  transition:0.3s;-->
 </div>
-
+</div>   
 
 
 <!--<div id="inner">
