@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>救世主キラ伝説</title>
+<link rel="icon" href="https://rehive.net/recontext/kira/wp-content/uploads/2023/12/ogp.jpg" sizes="16×16" type="image/png" /> 
+<style>
+body{
+  margin:0;
+  background:black;
+  color:#eee;
+  font-family:"Times New Roman", serif;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background-image: url(https://rehive.net/recontext/kira/wp-content/uploads/2023/12/ogp.jpg);
+ background-color: rgba(0,0,0,0.5);
+  background-blend-mode: lighten;
+}
+
+#container{
+  text-align:center;
+  animation: fadeIn 3s ease forwards;
+}
+
+h1{
+  font-size:48px;
+  letter-spacing:8px;
+  color:#c00;
+  text-shadow:0 0 20px red;
+}
+
+p{
+  margin-top:30px;
+  font-size:18px;
+  line-height:1.8;
+  opacity:0.85;
+}
+
+/*#enterBtn{
+  margin-top:40px;
+  padding:15px 40px;
+  font-size:18px;
+  background:black;
+  color:red;
+  border:2px solid red;
+  cursor:pointer;
+  transition:0.3s;
+}
+*/
+#enterBtn{
+  margin-top:40px;
+  padding:2px 30px;
+  font-size:20px;
+  background:white;
+  color:red;
+  border:2px solid white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#enterBtn:hover{
+  background:red;
+  color:black;
+  box-shadow:0 0 20px red;
+}
+
+#inner{
+  display:none;
+  text-align:center;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+.glow{
+  animation: glowAnim 2s infinite alternate;
+}
+
+@keyframes glowAnim{
+  from{text-shadow:0 0 5px red;}
+  to{text-shadow:0 0 25px red;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+  <h1 class="glow">救世主キラ伝説</h1>
+  <p>
+    今　世界の犯罪者が次々と<br>
+    消えているのは<br>
+    キラ様が復活なされたからです。<br>
+    キラ様とは復活なされたからです。<br>
+    キラ様とは世の中の悪を絶対に許さない<br>
+    地獄よりの死者です。<br>
+  </p>
+<p style="font-size:30px;">キラ様の復活を信じる者のみ<br>この入口からお入りください<br><br></p>
+  <button id="enterBtn" style="color:black">ENTER</button>
+</div>
+
+
+
+<!--<div id="inner">
+  <h1 class="glow">NEW WORLD</h1>
+  <p>
+    新たな秩序が始まる。<br>
+    裁きは下された。
+  </p>
+  <button onclick="location.reload()">BACK</button>
+</div>
+-->
+<script>
+const btn = document.getElementById("enterBtn");
+const container = document.getElementById("container");
+const inner = document.getElementById("inner");
+
+btn.onclick = ()=>{
+  container.style.display="none";
+  inner.style.display="block";
+};
+</script>
+
+</body>
+</html>
